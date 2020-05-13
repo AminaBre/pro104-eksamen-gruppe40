@@ -1,5 +1,10 @@
 # pro104-eksamen-gruppe40
 
+Dette er readme filen for gruppe 40 i eksamensbesvarelsen til PRO104.
+
+Medlemmene av gruppe 40 er som følger; Stephan Sebulonsen, Trond Einar Eriksen, Faizan Ali Khan, Amina Brenneng, Jan-Andreas Rusnak og Michael Keenan.
+
+
 Krav til løsningen (funksjonell og teknisk)
 
 • Oppgaven skal utføres i GitHub med GitHub classroom og leveres via GitHub
