@@ -1,3 +1,11 @@
+// Navigation Bar
+$(document).ready(function() {
+    $(".hamburger").click(function(){
+        $(".wrapper").toggleClass("collapse");
+    });
+});
+
+// Pil
 $(document).ready(function(){
 
     $(window).scroll(function() {

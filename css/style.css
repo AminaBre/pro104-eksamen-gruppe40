@@ -1,10 +1,121 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e1ecf2; /* Kan endres */
 }
 
 h1 {
     text-align: center;
+}
+
+.wrapper .navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+}
+
+.wrapper .navbar .hamburger {
+    width: 70px;
+    height: 100%;
+    background: #92a6e2;
+    padding: 15px 17px;
+    cursor: pointer;
+}
+
+.wrapper .navbar .hamburger div {
+    width: 35px;
+    height: 4px;
+    background: #000;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.wrapper .navbar .menu {
+    width: 100%;
+    background: #92a6e2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.wrapper .navbar .menu .title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.wrapper .sidebar {
+    position: fixed;
+    top: 60px;
+    background: #92a6e2;
+    width: 200px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1px;
+    white-space: nowrap;
+}
+
+.wrapper .sidebar ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: #fff;
+    display: none;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    background: #4360b5;
+}
+
+.wrapper .sidebar ul li  a:hover:before,
+.wrapper .sidebar ul li  a.active:before {
+    display: block;
+}
+
+.wrapper .sidebar ul li a span.icon {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.wrapper.collapse .sidebar {
+    width: 70px;
+}
+
+.wrapper.collapse .sidebar ul li a {
+    text-align: center;
+}
+
+.wrapper.collapse .sidebar ul li a span.icon {
+    margin: 0;
+}
+
+.wrapper.collapse .sidebar ul li a span.title {
+    display: none;
 }
 
 #arrowBtn {
