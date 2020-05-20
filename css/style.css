@@ -138,3 +138,52 @@ h1 {
 #arrowBtn:active {
     background: #2980b9;
 }
+
+/* Questionmark img */
+
+.questionInfo{
+    
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.questionmark{
+    
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 640px;
+    width: 4%;
+    
+}
+
+.overlay {
+    
+    margin: 0px;
+    position:absolute;
+    top: 610px;
+    right: 120px;
+    opacity: 0;
+    
+    
+    
+}
+
+.text {
+    
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 43;
+  left: 20%;
+  text-align: center;
+    
+    
+}
+
+.questionInfo:hover .overlay{
+    
+    opacity: 1;
+}
