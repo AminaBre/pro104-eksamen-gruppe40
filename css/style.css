@@ -79,6 +79,8 @@ h1 {
     text-align: center;
 }
 
+
+/* Top navbar */
 .wrapper .navbar {
     width: 100%;
     height: 60px;
@@ -89,7 +91,7 @@ h1 {
 .wrapper .navbar .hamburger {
     width: 70px;
     height: 100%;
-    background: #92a6e2;
+    background: #a9a9a9;
     padding: 15px 17px;
     cursor: pointer;
 }
@@ -104,11 +106,12 @@ h1 {
 
 .wrapper .navbar .menu {
     width: 100%;
-    background: #92a6e2;
+    background: #a9a9a9;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 0 20px;
+    opacity: 0.7;
 }
 
 .wrapper .navbar .menu .title {
@@ -118,11 +121,12 @@ h1 {
     letter-spacing: 1px;
 }
 
+/* Side navbar with icons and effects*/
 .wrapper .sidebar {
     position: fixed;
     top: 60px;
-    background: #92a6e2;
-    width: 200px;
+    background: #a9a9a9;
+    width: 150px;
     height: 100%;
     transition: all 0.3s ease;
     opacity: 0.7;
@@ -159,13 +163,13 @@ h1 {
 }
 
 .wrapper .sidebar ul li a span.icon {
-    margin-right: 10px;
+    margin-right: 2px;
     display: inline-block;
 }
 
 .wrapper .sidebar ul li a span.title {
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .wrapper.collapse .sidebar {
@@ -177,7 +181,7 @@ h1 {
 }
 
 .wrapper.collapse .sidebar ul li a span.icon {
-    margin: 0;
+    margin: 10;
 }
 
 .wrapper.collapse .sidebar ul li a span.title {
@@ -205,7 +209,7 @@ h1 {
     background: #2980b9;
 }
 
-/* Questionmark img */
+/* Questionmark img and effects */
 
 .questionInfo{
     
@@ -221,7 +225,7 @@ h1 {
     position: absolute;
     right: 20px;
     top: 640px;
-    width: 4%;
+    width: 6%;
     
 }
 
