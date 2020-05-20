@@ -419,19 +419,19 @@ opacity: 0.8;
     bottom: 30px;
     width: 60px;
     height: 60px;
-    border: none;
+    border: 1px solid #fff;
     outline: none;
     border-radius: 30%;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 
     color: #fff;
-    background: #3498db; /* Bare å endre farge */
+    background: rgba(255, 255, 255, 0.3); /* Bare å endre farge */
     cursor: pointer;
     display: none;
 }
 
 #arrowBtn:active {
-    background: #2980b9;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 /* Questionmark1 img and effects */
