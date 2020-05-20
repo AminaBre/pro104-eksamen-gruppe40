@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>ARBEID-FORDELEREN</title>
+	<meta charset="UTF-8" lang="en">
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="Hoved">
+    <div id="mainContainer">
+
+	<!--<h1 id="title_top">ARBEIDS-FORDELEREN</h1>-->
+	<p id="description"> Start prosjektet på best mulig måte med "Arbeids-fordeleren". Enkel og god oversikt!<p>
+
+		<div class="button">
+			<a href="index.html" class="btn">Tilbake</a>
+		</div>
+
+			<div class="container">
+				<div class="section section_users">
+					<h2 class="title_sections list_items_member">Legg til teammedlem</h2>
+					<form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
+
+						<div id="entry_username">
+							<!-- <h4>Add new member</h4> -->
+							<div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
+						</div>
+						<div id="entry_submit_user">
+							<div><input type="submit" name="submit_user" value="Legg til medlem" /></div>
+						</div>
+						<div id="member_list"></div>
+					</form>
+				</div>
+				<div class="section section_tasks">
+					<h2 class="title_sections list_items_task">Legg til oppgave</h2>
+					<form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
+
+						<div id="entry_task">
+							<!-- <h4>New task</h4> -->
+							<div><input name="task" placeholder="Ny oppgave" /></div>
+						</div>
+						<div id="entry_submit_task">
+							<div><input type="submit" name="submit_task" value="Legg til oppgave" /></div>
+						</div>
+						<div id="task_list"></div>
+					</form>
+				</div>
+				<div class="section section_overview">
+					<h2 class="title_sections">
+						<span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
+					<div id="confirm"></div>
+					<div id="overview_list"></div>
+				</div>
+			</div>
+
+			<script src="Webprosjekt.js"></script>
+		
+</body>
+
+</html>
