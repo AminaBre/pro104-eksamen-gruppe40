@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Arbeidsfordeleren</title>
     <script src="https://kit.fontawesome.com/84093ac266.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -132,9 +133,9 @@
     <div id="visual2"></div>
     <div id="visual3"></div>
     <div id="visual4"></div>
-    <div id="visual5"></div>
+    <!-- <div id="visual5"></div>
     <div id="visual6"></div>
-    <div id="visual7"></div>
+    <div id="visual7"></div> -->
     
     <!-- icons -->
     
@@ -153,7 +154,47 @@
             <div class="button">
                 <a href="#main-page" class="btn">START NÅ</a>
             </div>
-        </header>
- 
+    
+    <!-- Kom i gang bokser -->
+    
+    			<div class="containerBoxes">
+				<div class="section section_users">
+					<h2 class="title_sections list_items_member">TEAMMEDLEM</h2>
+					<form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
+
+						<div id="entry_username">
+							<!-- <h4>Add new member</h4> -->
+							<div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
+						</div>
+						<div id="entry_submit_user">
+							<div><input type="submit" name="submit_user" value="Legg til medlem" /></div>
+						</div>
+						<div id="member_list"></div>
+					</form>
+				</div>
+				<div class="section section_tasks">
+					<h2 class="title_sections list_items_task">ARBEIDSOPPGAVE</h2>
+					<form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
+
+						<div id="entry_task">
+							<!-- <h4>New task</h4> -->
+							<div><input name="task" placeholder="Ny oppgave" /></div>
+						</div>
+						<div id="entry_submit_task">
+							<div><input type="submit" name="submit_task" value="Legg til oppgave" /></div>
+						</div>
+						<div id="task_list"></div>
+					</form>
+				</div>
+				<div class="section section_overview">
+					<h2 class="title_sections">
+						<span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
+					<div id="confirm"></div>
+					<div id="overview_list"></div>
+				</div>
+			</div>
+    
+    <script src="js/script.js"></script>
+    
   </body>
 </html>
