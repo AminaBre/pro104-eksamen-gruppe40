@@ -79,8 +79,8 @@ header {
 
 .addButton{
     position: absolute;
-    top: 212%;
-    left: 50%;
+    top: 215%;
+    left: 53%;
     transform: translate(-50%,-50%);
     scroll-behavior: smooth;
 }
@@ -458,10 +458,15 @@ opacity: 0.8;
 .overlay {
     
     margin: 0px;
-    position:absolute;
+    position: absolute;
     top: 610px;
-    right: 120px;
+    right: 100px;
     opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
     
     
     
@@ -471,17 +476,17 @@ opacity: 0.8;
     
   color: white;
   font-size: 20px;
-  position: relative;
   top: 43;
   left: 20%;
   text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
     
 }
 
 .questionInfo:hover .overlay{
     
-    opacity: 1;
+    opacity: 0.8;
 }
 
 /* Questionmark teammedlem info */
@@ -507,21 +512,29 @@ opacity: 0.8;
 .teammemberOverlay {
     
     margin: 0px;
-    position: relative;
-    top: 1420px;
-    left: -39px;
+    position: absolute;
+    top: 1410px;
+    left: 14%;
     opacity: 0;
+    margin: 0px;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
     
-}
+    
+    
+}   
 
 .teamTxt {
     
   color: white;
   font-size: 20px;
-  position: absolute;
   top: 43;
   left: 20%;
   text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
     
 }
@@ -554,10 +567,15 @@ opacity: 0.8;
 .oppgaveOverlay {
     
     margin: 0px;
-    position: relative;
+    position: absolute;
     top: 1420px;
-    left: 353px;
+    left: 606px;
     opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
     
 }
 
@@ -565,10 +583,10 @@ opacity: 0.8;
     
   color: white;
   font-size: 20px;
-  position: absolute;
   top: 43;
   left: 23%;
   text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
     
 }
@@ -601,10 +619,15 @@ opacity: 0.8;
 .dateOverlay {
     
     margin: 0px;
-    position: relative;
-    top: 1420px;
-    left: 750px;
+    position: absolute;
+    top: 1380px;
+    left: 1000px;
     opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
     
 }
 
@@ -612,10 +635,11 @@ opacity: 0.8;
     
   color: white;
   font-size: 20px;
-  position: absolute;
   top: 43;
   left: 20%;
   text-align: center;
+text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
     
 }
@@ -659,7 +683,7 @@ h4 {
 	box-shadow: 1px 1px rgba(9, 30, 66, .25);
 	border-radius: 4px;
     width: 138%;
-    height: 170%;
+    height: 90%;
     opacity: 0.9;
 }
 
