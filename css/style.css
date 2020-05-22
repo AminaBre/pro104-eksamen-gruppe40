@@ -1,10 +1,417 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../mainpage_background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Makes image background for header only
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("mainpage_background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+*/ 
+
+/* Mainpage title */
+
+.mainTitle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mainTitle h1{
+    border: 1px solid gray;
+    border-style: hidden;
+    opacity: 80%;
+    width: auto;
+    height: 80px;
+    border-radius: 5%;
+    background-color: gray;
+    color: #fff;
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Mainpage button */
+
+.button{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    scroll-behavior: smooth;
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 21px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Add button */
+
+.addButton{
+    position: absolute;
+    top: 215%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    scroll-behavior: smooth;
+}
+
+.addBtn{
+    border: 1px solid #fff;
+    padding: 21px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.6s ease;
+}
+
+.addBtn:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 h1 {
     text-align: center;
+}
+
+.secondTitle{
+    position: absolute;
+    top: 130%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+}
+
+.secondTitle h2{
+    border: 1px solid gray;
+    border-style: hidden;
+    opacity: 80%;
+    width: auto;
+    height: 60px;
+    border-radius: 5%;
+    background-color: gray;
+    color: #fff;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Oversikt title  */
+
+.thirdTitle{
+    position: absolute;
+    top: 240%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.thirdTitle h3{
+    border: 1px solid gray;
+    border-style: hidden;
+    opacity: 80%;
+    width: auto;
+    height: 60px;
+    border-radius: 5%;
+    background-color: gray;
+    color: #fff;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Arrow img */
+
+.arrowImg{
+    
+    position: absolute;
+    width: 5%;
+    top: 2030px;
+    left: 697px;
+    opacity: 0.8;
+}
+
+.arrowImg2{
+    
+    position: absolute;
+    width: 5%;
+    top: 1848px;
+    left: 697px;
+    opacity: 0.8;
+}
+
+.arrowImg3{
+    
+    position: absolute;
+    width: 5%;
+    top: 2220px;
+    left: 697px;
+    opacity: 0.8;
+}
+
+/* Visual boxes */
+
+#visual1{
+
+    position: absolute;
+    top: 1830px;
+    left: 250px;
+  width: 350px;
+   height: 450px;
+  background-color: lightgrey;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+opacity: 0.8;
+
+}
+
+#visual2{
+
+    position: absolute;
+    top: 2160px;
+    left: 850px;
+  width: 380px;
+   height: 150px;
+  background-color: #97C0A0;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+    opacity: 0.8;
+
+}
+
+#visual3{
+
+    position: absolute;
+    top: 1800px;
+    left: 850px;
+  width: 380px;
+   height: 150px;
+  background-color: #E49E9E;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+    opacity: 0.8;
+
+}
+
+#visual4{
+
+    position: absolute;
+    top: 1978px;
+    left: 850px;
+  width: 380px;
+   height: 150px;
+  background-color: #E9E9AF;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+opacity: 0.8;
+
+}
+
+#visual5{
+
+    position: absolute;
+    top: 1008px;
+    left: 930px;
+  width: 340px;
+   height: 350px;
+  background-color: lightgrey;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+opacity: 0.8;
+
+}
+
+#visual6{
+
+    position: absolute;
+    top: 1008px;
+    left: 540px;
+  width: 340px;
+   height: 350px;
+  background-color: lightgrey;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+opacity: 0.8;
+
+}
+
+#visual7{
+
+    position: absolute;
+    top: 1008px;
+    left: 160px;
+  width: 340px;
+   height: 350px;
+  background-color: lightgrey;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+opacity: 0.8;
+
+}
+
+/* Icons */
+
+.iconImg1{
+    
+    position: absolute;
+    width: 4%;
+    top: 1855px;
+    left: 1277px;
+    opacity: 0.9;
+    
+}
+
+.iconImg2{
+    
+    position: absolute;
+    width: 6%;
+    top: 2035px;
+    left: 1272px;
+    opacity: 0.9;
+    
+}
+
+.iconImg3{
+    
+    position: absolute;
+    width: 6%;
+    top: 2210px;
+    left: 1272px;
+    opacity: 0.9;
+    
+}
+
+/* Top navbar */
+
+.wrapper .navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+}
+
+.wrapper .navbar .hamburger {
+    width: 70px;
+    height: 100%;
+    background: #a9a9a9;
+    padding: 15px 17px;
+    cursor: pointer;
+    
+}
+
+.wrapper .navbar .hamburger div {
+    width: 35px;
+    height: 4px;
+    background: #000;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.wrapper .navbar .menu .title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Side navbar with icons and effects*/
+.wrapper .sidebar {
+    position: fixed;
+    top: 60px;
+    background: #a9a9a9;
+    width: 150px;
+    height: 100%;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1px;
+    white-space: nowrap;
+}
+
+.wrapper .sidebar ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: #fff;
+    display: none;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    background: #4360b5;
+}
+
+.wrapper .sidebar ul li  a:hover:before,
+.wrapper .sidebar ul li  a.active:before {
+    display: block;
+}
+
+.wrapper .sidebar ul li a span.icon {
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.wrapper.collapse .sidebar {
+    width: 70px;
+}
+
+.wrapper.collapse .sidebar ul li a {
+    text-align: center;
+}
+
+.wrapper.collapse .sidebar ul li a span.icon {
+    margin: 10;
+}
+
+.wrapper.collapse .sidebar ul li a span.title {
+    display: none;
 }
 
 #arrowBtn {
@@ -13,17 +420,377 @@ h1 {
     bottom: 30px;
     width: 60px;
     height: 60px;
-    border: none;
+    border: 1px solid #fff;
     outline: none;
     border-radius: 30%;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 
     color: #fff;
-    background: #3498db; /* Bare å endre farge */
+    background: rgba(255, 255, 255, 0.3); /* Bare å endre farge */
     cursor: pointer;
     display: none;
 }
 
 #arrowBtn:active {
-    background: #2980b9;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Questionmark1 img and effects */
+
+.questionInfo{
+    
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.questionmark{
+    
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 640px;
+    width: 6%;
+    
+}
+
+.overlay {
+    
+    margin: 0px;
+    position: absolute;
+    top: 610px;
+    right: 100px;
+    opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
+    
+    
+    
+}
+
+.text {
+    
+  color: white;
+  font-size: 20px;
+  top: 43;
+  left: 20%;
+  text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+.questionInfo:hover .overlay{
+    
+    opacity: 0.8;
+}
+
+/* Questionmark teammedlem info */
+
+.teammemberInfo{
+    
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.teammemberInfoImg{
+    
+    display: block;
+    position: absolute;
+    left: 305px;
+    top: 1400px;
+    width: 6%;
+    
+}
+
+.teammemberOverlay {
+    
+    margin: 0px;
+    position: absolute;
+    top: 1410px;
+    left: 14%;
+    opacity: 0;
+    margin: 0px;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
+    
+    
+    
+}   
+
+.teamTxt {
+    
+  color: white;
+  font-size: 20px;
+  top: 43;
+  left: 20%;
+  text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+.teammemberInfo:hover .teammemberOverlay{
+    
+    opacity: 1;
+}
+
+/* Questionmark oppgave info */
+
+.oppgaveInfo{
+    
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.oppgaveInfoImg{
+    
+    display: block;
+    position: absolute;
+    right: 625px;
+    top: 1400px;
+    width: 6%;
+    
+}
+
+.oppgaveOverlay {
+    
+    margin: 0px;
+    position: absolute;
+    top: 1420px;
+    left: 606px;
+    opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
+    
+}
+
+.oppgaveTxt {
+    
+  color: white;
+  font-size: 20px;
+  top: 43;
+  left: 23%;
+  text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+.oppgaveInfo:hover .oppgaveOverlay{
+    
+    opacity: 1;
+}
+
+/* Questionmark date info */
+
+.dateInfo{
+    
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.dateInfoImg{
+    
+    display: block;
+    position: absolute;
+    right: 230px;
+    top: 1400px;
+    width: 6%;
+    
+}
+
+.dateOverlay {
+    
+    margin: 0px;
+    position: absolute;
+    top: 1380px;
+    left: 1000px;
+    opacity: 0;
+    background: #cdcdcd;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: hidden;
+    border-radius: 5%;
+    
+}
+
+.dateTxt {
+    
+  color: white;
+  font-size: 20px;
+  top: 43;
+  left: 20%;
+  text-align: center;
+text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+.dateInfo:hover .dateOverlay{
+    
+    opacity: 1;
+}
+
+/* Kom i gang bokser */
+
+
+h4 {
+	background-color: #eee;
+	font-size: 1.2em;
+	padding-left: 10px;
+}
+
+
+/* Divides the content to three sections */
+.containerBoxes {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/* grid-template-rows: 1; */
+	grid-column-gap: 9em;
+	grid-auto-columns: 1fr;
+	grid-auto-flow: column;
+	margin: 63em 11em;
+    position: absolute;    
+
+}
+
+/*  */
+.section {
+    
+	margin-top: 1.5em;
+	padding: 0px 5px 15px 5px;
+	background: #cdcdcd;
+    opacity: 90%;
+	/* border: 1px solid rgba(202, 202, 202, 0.801); */
+	box-shadow: 1px 1px rgba(9, 30, 66, .25);
+	border-radius: 4px;
+    width: 138%;
+    height: 90%;
+    opacity: 0.9;
+}
+
+.title_sections {
+	margin: .6em;
+	background: #cdcdcd !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.add_entry {
+	background: #eee;
+}
+
+input {
+	margin-bottom: 10px;
+}
+
+/* Input legg til ny teammedlem */
+input,
+input[name=name] {
+	cursor: text;
+	background-color: #fff;
+	border: 1px solid #8ADCFF;
+	margin-top: 5px;
+	color: #333;
+
+}
+
+/* Input legg til arbeidsoppgave*/
+input,
+input[name=task] {
+	cursor: text;
+	background-color: #fff;
+	border: 1px solid #8ADCFF;
+	margin-top: 5px;
+	color: #333;
+}
+
+
+/* knapp for teammedlem og arbeidsoppgave */
+input,
+input[type=submit] {
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #8ADCFF;
+	border: none;
+	color: white;
+	padding: 12px 14px;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 16px;
+	float: left;
+}
+
+input,
+input[type=submit]:hover {
+	background-color: #eee;
+	border: 1px solid #8ADCFF;
+	color: #8ADCFF;
+}
+
+/* Bekreft knapp */
+#confirmButton {
+	cursor: pointer;
+	font-weight: bold;
+	background: #8ADCFF !important;
+	border: none;
+	color: white;
+	padding: 12px 14px;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 16px;
+	float: left;
+}
+
+#confirmButton:hover {
+	background: #eee !important;
+	border: 1px solid #8ADCFF;
+	color: #8ADCFF;
+}
+
+
+
+.list_title {
+	width: 100%;
+	font-size: 1.2em;
+	float: left;
+	margin: 5px 0px 5px 0px;
+}
+
+/* For added members and tasks */
+.list_items {
+	width: 90%;
+	float: left;
+	font-size: 1em;
+	margin: 4px 10px 4px 10px;
+	padding: 10px;
+	background: #fff;
+	box-shadow: 1px 1px rgba(9, 30, 66, .25);
+	border-radius: 3px;
+}
+
+/* Hover effect for list items */
+.list_items:hover {
+	/* transform: scale(1.02); */
+	/* border: 1px solid rgb(201, 201, 201); */
+	/* box-shadow: 2px 2px 7px rgba(110, 110, 110, 0.5); */
+	background-color: #ddd;
+
 }

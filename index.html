@@ -1,27 +1,200 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ARBEIDS-FORDELEREN</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div class="main">
-                </div>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Arbeidsfordeleren</title>
+    <script src="https://kit.fontawesome.com/84093ac266.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>                
+            </div>
+            
+            <!-- Sidebar -->
+            
+            <div class="sidebar">
                 <ul>
-                    <li class="active"><a href="#">Hjem</a></li>
-                    <li><a href="#">Om</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </span>
+                            <span class="title">New project</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            <span class="icon">
+                                <i class="fas fa-tasks"></i>
+                            </span>
+                            <span class="title">Create new list</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-users-cog"></i>
+                            </span>
+                            <span class="title">Edit members</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-users-cog"></i>
+                            </span>
+                            <span class="title">Edit members</span> <!-- Bør endres -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fas fa-users-cog"></i>
+                            </span>
+                            <span class="title">Edit members</span> <!-- Bør endres -->
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="title">
-                <h1>ARBEIDS-FORDELEREN</h1>
-            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="mainTitle">
+            <h1>ARBEIDS-FORDELEREN</h1>
+        </div>
+    </header>
+        
+    <div class="secondTitle"><h2>KOM I GANG</h2></div>
+    
+    <div class="thirdTitle"><h3>OVERSIKT</h3></div>
+    
+    
+    <!-- Menu button -->
+    
+    <div class="button">
+        <a href="#main-page" class="btn">START NÅ</a>
+    </div>
+    
+    
+    
+    <!-- Questionmark with info -->
+    
+    <div class="questionInfo"><img src="images/questionMrk.png" class="questionmark" alt="Questionmark">
+            <div class="overlay"><div class="text">Trykk på "Start nå" for å begynne tildelingen av arbeidsoppgaver til teammedlemmer.</div></div>
+    </div>
+    
+    <!-- Teammember info -->
+    
+    <div class="teammemberInfo"><img src="images/questionMrk.png" class="teammemberInfoImg" alt="Questionmark2">
+            <div class="teammemberOverlay"><div class="teamTxt">Skriv inn navnet på et teammedlem, trykk deretter "legg til."</div></div>
+    </div>
+    
+    <!-- Oppgave info -->
+    
+    <div class="oppgaveInfo"><img src="images/questionMrk.png" class="oppgaveInfoImg" alt="Questionmark3">
+            <div class="oppgaveOverlay"><div class="oppgaveTxt">Skriv inn en oppgave, deretter trykk "legg til."</div></div>
+    </div>
+    
+        <!-- Date info -->
+    
+    <div class="dateInfo"><img src="images/questionMrk.png" class="dateInfoImg" alt="Questionmark4">
+            <div class="dateOverlay"><div class="oppgaveTxt">Trykk først på et teammedlem, deretter oppgaven teammedlemmet skal utføre. Når du er ferdig med å tildele oppgaver, trykk "gå videre".</div></div>
+    </div>
+    
+    <!-- Add tasks button -->
+    
+    <div class="addButton">
+        <a href="#main-page" class="addBtn">GÅ VIDERE</a>
+    </div>
+    
+    <!-- Arrow images -->
+    
+    <img src="images/Arrow.png" class="arrowImg" alt="Arrow1">
+    
+        <img src="images/Arrow.png" class="arrowImg2" alt="Arrow2">
+    
+        <img src="images/Arrow.png" class="arrowImg3" alt="Arrow3">
+
+    <!-- Visual boxes -->
+    
+    <div id="visual1"></div>
+    <div id="visual2"></div>
+    <div id="visual3"></div>
+    <div id="visual4"></div>
+    <!-- <div id="visual5"></div>
+    <div id="visual6"></div>
+    <div id="visual7"></div> -->
+    
+    <!-- icons -->
+    
+    
+    <img src="images/x.png" class="iconImg1" alt="X-img">
+    
+    <img src="images/hourglass.png" class="iconImg2" alt="hourglass-img">
+    
+    <img src="images/check.png" class="iconImg3" alt="check-img">
+    
+
+    <button id="arrowBtn">
+        <i class="material-icons">arrow_upward</i>
+    </button>
 
             <div class="button">
                 <a href="#main-page" class="btn">START NÅ</a>
             </div>
-        </header>
- 
+    
+    <!-- Kom i gang bokser -->
+    
+    			<div class="containerBoxes">
+				<div class="section section_users">
+					<h2 class="title_sections list_items_member">TEAMMEDLEM</h2>
+					<form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
+
+						<div id="entry_username">
+							<!-- <h4>Add new member</h4> -->
+							<div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
+						</div>
+						<div id="entry_submit_user">
+							<div><input type="submit" name="submit_user" value="Legg til medlem" /></div>
+						</div>
+						<div id="member_list"></div>
+					</form>
+				</div>
+				<div class="section section_tasks">
+					<h2 class="title_sections list_items_task">ARBEIDSOPPGAVE</h2>
+					<form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
+
+						<div id="entry_task">
+							<!-- <h4>New task</h4> -->
+							<div><input name="task" placeholder="Ny oppgave" /></div>
+						</div>
+						<div id="entry_submit_task">
+							<div><input type="submit" name="submit_task" value="Legg til oppgave" /></div>
+						</div>
+						<div id="task_list"></div>
+					</form>
+				</div>
+				<div class="section section_overview">
+					<h2 class="title_sections">
+						<span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
+					<div id="confirm"></div>
+					<div id="overview_list"></div>
+				</div>
+			</div>
+    
+    <script src="js/script.js"></script>
+    
   </body>
 </html>
