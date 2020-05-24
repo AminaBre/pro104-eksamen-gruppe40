@@ -17,20 +17,8 @@ body {
     background-attachment: fixed;
 }
 
-/* Makes image background for header only
 
-header {
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("mainpage_background.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-*/ 
-
-/* Mainpage title */
+/*  FIRST PAGE  */
 
 .mainTitle{
     position: absolute;
@@ -73,365 +61,6 @@ header {
 .btn:hover{
     background-color: #fff;
     color: #000;
-}
-
-/* Add button */
-
-.addButton{
-    position: absolute;
-    top: 215%;
-    left: 53%;
-    transform: translate(-50%,-50%);
-}
-
-.addBtn{
-    border: 1px solid #fff;
-    padding: 21px 40px;
-    color: #fff;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: 0.6s ease;
-}
-
-.addBtn:hover{
-    background-color: #fff;
-    color: #000;
-}
-
-h1 {
-    text-align: center;
-}
-
-.secondTitle{
-    position: absolute;
-    top: 130%;
-    left: 52%;
-    transform: translate(-50%,-50%);
-}
-
-.secondTitle h2{
-    border: 1px solid gray;
-    border-style: hidden;
-    opacity: 80%;
-    width: auto;
-    height: 60px;
-    border-radius: 5%;
-    background-color: gray;
-    color: #fff;
-    font-size: 45px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-/* Oversikt title  */
-
-.thirdTitle{
-    position: absolute;
-    top: 240%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.thirdTitle h3{
-    border: 1px solid gray;
-    border-style: hidden;
-    opacity: 80%;
-    width: auto;
-    height: 60px;
-    border-radius: 5%;
-    background-color: gray;
-    color: #fff;
-    font-size: 45px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* Arrow img */
-
-.arrowImg{
-    
-    position: absolute;
-    width: 5%;
-    top: 2030px;
-    left: 697px;
-    opacity: 0.8;
-}
-
-.arrowImg2{
-    
-    position: absolute;
-    width: 5%;
-    top: 1848px;
-    left: 697px;
-    opacity: 0.8;
-}
-
-.arrowImg3{
-    
-    position: absolute;
-    width: 5%;
-    top: 2220px;
-    left: 697px;
-    opacity: 0.8;
-}
-
-/* Visual boxes */
-
-#visual1{
-
-    position: absolute;
-    top: 1830px;
-    left: 250px;
-  width: 350px;
-   height: 450px;
-  background-color: lightgrey;
-  border: 5px solid white;
-  padding: 50px;
-  margin: 20px;
-opacity: 0.8;
-
-}
-
-#visual2{
-
-    position: absolute;
-    top: 2160px;
-    left: 850px;
-  width: 380px;
-   height: 150px;
-  background-color: #97C0A0;
-  border: 5px solid white;
-  padding: 50px;
-  margin: 20px;
-    opacity: 0.8;
-
-}
-
-#visual3{
-
-    position: absolute;
-    top: 1800px;
-    left: 850px;
-  width: 380px;
-   height: 150px;
-  background-color: #E49E9E;
-  border: 5px solid white;
-  padding: 50px;
-  margin: 20px;
-    opacity: 0.8;
-
-}
-
-#visual4{
-
-    position: absolute;
-    top: 1978px;
-    left: 850px;
-  width: 380px;
-   height: 150px;
-  background-color: #E9E9AF;
-  border: 5px solid white;
-  padding: 50px;
-  margin: 20px;
-opacity: 0.8;
-
-}
-
-#visual5{
-
-    position: absolute;
-    top: 1008px;
-    left: 930px;
-  width: 340px;
-   height: 350px;
-  background-color: lightgrey;
-  border: 5px solid white;
-  padding: 50px;
-  margin: 20px;
-opacity: 0.8;
-
-}
-
-#visual6{
-
-    position: absolute;
-    top: 1008px;
-    left: 540px;
-  width: 340px;
-   height: 350px;
-  background-color: lightgrey;
-  border: 5px solid white;
-  padding: 50px;
-  margin: 20px;
-opacity: 0.8;
-
-}
-
-#visual7{
-
-    position: absolute;
-    top: 1008px;
-    left: 160px;
-  width: 340px;
-   height: 350px;
-  background-color: lightgrey;
-  border: 5px solid white;
-  padding: 50px;
-  margin: 20px;
-opacity: 0.8;
-
-}
-
-/* Icons */
-
-.iconImg1{
-    
-    position: absolute;
-    width: 4%;
-    top: 1855px;
-    left: 1277px;
-    opacity: 0.9;
-    
-}
-
-.iconImg2{
-    
-    position: absolute;
-    width: 6%;
-    top: 2035px;
-    left: 1272px;
-    opacity: 0.9;
-    
-}
-
-.iconImg3{
-    
-    position: absolute;
-    width: 6%;
-    top: 2210px;
-    left: 1272px;
-    opacity: 0.9;
-    
-}
-
-/* Top navbar */
-
-.wrapper .navbar {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    position: fixed;
-}
-
-.wrapper .navbar .hamburger {
-    width: 70px;
-    height: 100%;
-    background: #a9a9a9;
-    padding: 15px 17px;
-    cursor: pointer;
-    
-}
-
-.wrapper .navbar .hamburger div {
-    width: 35px;
-    height: 4px;
-    background: #000;
-    margin: 5px 0;
-    border-radius: 5px;
-}
-
-.wrapper .navbar .menu .title {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-/* Side navbar with icons and effects*/
-.wrapper .sidebar {
-    position: fixed;
-    top: 60px;
-    background: #a9a9a9;
-    width: 150px;
-    height: 100%;
-    transition: all 0.3s ease;
-    opacity: 0.7;
-}
-
-.wrapper .sidebar ul li a {
-    display: block;
-    padding: 20px;
-    color: #fff;
-    position: relative;
-    margin-bottom: 1px;
-    white-space: nowrap;
-}
-
-.wrapper .sidebar ul li a:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 100%;
-    background: #fff;
-    display: none;
-}
-
-.wrapper .sidebar ul li a:hover,
-.wrapper .sidebar ul li a.active {
-    background: #4360b5;
-}
-
-.wrapper .sidebar ul li  a:hover:before,
-.wrapper .sidebar ul li  a.active:before {
-    display: block;
-}
-
-.wrapper .sidebar ul li a span.icon {
-    margin-right: 2px;
-    display: inline-block;
-}
-
-.wrapper .sidebar ul li a span.title {
-    display: inline-block;
-    font-size: 15px;
-}
-
-.wrapper.collapse .sidebar {
-    width: 70px;
-}
-
-.wrapper.collapse .sidebar ul li a {
-    text-align: center;
-}
-
-.wrapper.collapse .sidebar ul li a span.icon {
-    margin: 10;
-}
-
-.wrapper.collapse .sidebar ul li a span.title {
-    display: none;
-}
-
-#arrowBtn {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #fff;
-    outline: none;
-    border-radius: 30%;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-
-    color: #fff;
-    background: rgba(255, 255, 255, 0.3); /* Bare å endre farge */
-    cursor: pointer;
-    display: none;
-}
-
-#arrowBtn:active {
-    background: rgba(255, 255, 255, 0.5);
 }
 
 /* Questionmark1 img and effects */
@@ -486,6 +115,56 @@ opacity: 0.8;
 .questionInfo:hover .overlay{
     
     opacity: 0.8;
+}
+
+
+/* Add button */
+
+.addButton{
+    position: absolute;
+    top: 215%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+}
+
+.addBtn{
+    border: 1px solid #fff;
+    padding: 21px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.6s ease;
+}
+
+.addBtn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* SECOND PAGE */
+
+.secondTitle{
+    position: absolute;
+    top: 130%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+}
+
+.secondTitle h2{
+    border: 1px solid gray;
+    border-style: hidden;
+    opacity: 80%;
+    width: auto;
+    height: 60px;
+    border-radius: 5%;
+    background-color: gray;
+    color: #fff;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Questionmark teammedlem info */
@@ -648,7 +327,7 @@ text-align: center;
     opacity: 1;
 }
 
-/* Kom i gang bokser */
+/* Kom-i-gang bokser */
 
 
 h4 {
@@ -670,7 +349,7 @@ h4 {
     position: absolute;  
 }
 
-/*  */
+/* Input boksene  */
 .section {
     
 	margin-top: 1.5em;
@@ -792,3 +471,273 @@ input[type=submit]:hover {
 	background-color: #ddd;
 
 }
+
+/* THIRD PAGE  */
+
+.thirdTitle{
+    position: absolute;
+    top: 240%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.thirdTitle h3{
+    border: 1px solid gray;
+    border-style: hidden;
+    opacity: 80%;
+    width: auto;
+    height: 60px;
+    border-radius: 5%;
+    background-color: gray;
+    color: #fff;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Arrow img */
+
+.arrowImg{
+    
+    position: absolute;
+    width: 5%;
+    top: 2030px;
+    left: 697px;
+    opacity: 0.8;
+}
+
+.arrowImg2{
+    
+    position: absolute;
+    width: 5%;
+    top: 1848px;
+    left: 697px;
+    opacity: 0.8;
+}
+
+.arrowImg3{
+    
+    position: absolute;
+    width: 5%;
+    top: 2220px;
+    left: 697px;
+    opacity: 0.8;
+}
+
+/* Visual boxes */
+
+#visual1{
+
+    position: absolute;
+    top: 1830px;
+    left: 250px;
+  width: 350px;
+   height: 450px;
+  background-color: lightgrey;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+opacity: 0.8;
+
+}
+
+#visual2{
+
+    position: absolute;
+    top: 2160px;
+    left: 850px;
+  width: 380px;
+   height: 150px;
+  background-color: #97C0A0;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+    opacity: 0.8;
+
+}
+
+#visual3{
+
+    position: absolute;
+    top: 1800px;
+    left: 850px;
+  width: 380px;
+   height: 150px;
+  background-color: #E49E9E;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+    opacity: 0.8;
+
+}
+
+#visual4{
+
+    position: absolute;
+    top: 1978px;
+    left: 850px;
+  width: 380px;
+   height: 150px;
+  background-color: #E9E9AF;
+  border: 5px solid white;
+  padding: 50px;
+  margin: 20px;
+opacity: 0.8;
+
+}
+
+
+/* Icons */
+
+.iconImg1{
+    
+    position: absolute;
+    width: 4%;
+    top: 1855px;
+    left: 1277px;
+    opacity: 0.9;
+    
+}
+
+.iconImg2{
+    
+    position: absolute;
+    width: 6%;
+    top: 2035px;
+    left: 1272px;
+    opacity: 0.9;
+    
+}
+
+.iconImg3{
+    
+    position: absolute;
+    width: 6%;
+    top: 2210px;
+    left: 1272px;
+    opacity: 0.9;
+    
+}
+
+/* NAVBAR */
+
+.wrapper .navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+}
+
+.wrapper .navbar .hamburger {
+    width: 70px;
+    height: 100%;
+    background: #a9a9a9;
+    padding: 15px 17px;
+    cursor: pointer;
+    
+}
+
+.wrapper .navbar .hamburger div {
+    width: 35px;
+    height: 4px;
+    background: #000;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.wrapper .navbar .menu .title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Side navbar with icons and effects*/
+
+.wrapper .sidebar {
+    position: fixed;
+    top: 60px;
+    background: #a9a9a9;
+    width: 150px;
+    height: 100%;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1px;
+    white-space: nowrap;
+}
+
+.wrapper .sidebar ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: #fff;
+    display: none;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    background: #4360b5;
+}
+
+.wrapper .sidebar ul li  a:hover:before,
+.wrapper .sidebar ul li  a.active:before {
+    display: block;
+}
+
+.wrapper .sidebar ul li a span.icon {
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.wrapper.collapse .sidebar {
+    width: 70px;
+}
+
+.wrapper.collapse .sidebar ul li a {
+    text-align: center;
+}
+
+.wrapper.collapse .sidebar ul li a span.icon {
+    margin: 10;
+}
+
+.wrapper.collapse .sidebar ul li a span.title {
+    display: none;
+}
+
+/* Pil */
+#arrowBtn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 30%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3); /* Bare å endre farge */
+    cursor: pointer;
+    display: none;
+}
+
+#arrowBtn:active {
+    background: rgba(255, 255, 255, 0.5);
+}
+

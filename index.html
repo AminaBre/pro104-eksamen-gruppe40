@@ -24,7 +24,7 @@
             </div>
 
             <!-- Sidebar -->
-            <div container="pullGit"></div>
+
             <div class="sidebar">
                 <ul>
                     <li>
@@ -72,20 +72,12 @@
         </div>
     </nav>
 
+    <section class="firstPage">
     <header>
         <div class="mainTitle">
             <h1>ARBEIDS-FORDELEREN</h1>
         </div>
     </header>
-
-    <div class="secondTitle">
-        <h2>KOM I GANG</h2>
-    </div>
-
-    <div class="thirdTitle">
-        <h3>OVERSIKT</h3>
-    </div>
-
 
     <!-- Menu button -->
 
@@ -101,6 +93,12 @@
         <div class="overlay">
             <div class="text">Trykk på "Start nå" for å begynne tildelingen av arbeidsoppgaver til teammedlemmer.</div>
         </div>
+    </div>
+    </section>
+    
+    <section class="secondPage">
+     <div class="secondTitle">
+        <h2>KOM I GANG</h2>
     </div>
 
     <!-- Teammember info -->
@@ -133,6 +131,12 @@
     <div class="addButton">
         <a href="#main-page" class="addBtn">GÅ VIDERE</a>
     </div>
+    </section>
+    
+    <section class="thirdPage">
+    <div class="thirdTitle">
+        <h3>OVERSIKT</h3>
+    </div>
 
     <!-- Arrow images -->
 
@@ -148,11 +152,9 @@
     <div id="visual2"></div>
     <div id="visual3"></div>
     <div id="visual4"></div>
-    <!-- <div id="visual5"></div>
-    <div id="visual6"></div>
-    <div id="visual7"></div> -->
 
-    <!-- icons -->
+        
+    <!-- Ikoner - status  -->
 
 
     <img src="images/x.png" class="iconImg1" alt="X-img">
@@ -166,9 +168,6 @@
         <i class="material-icons">arrow_upward</i>
     </button>
 
-    <div class="button">
-        <a href="#start_nå" class="btn">START NÅ</a>
-    </div>
 
     <!-- Kom i gang bokser -->
     <div class="containerBoxes" id="start_nå">
@@ -177,7 +176,7 @@
             <form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
 
                 <div id="entry_username">
-                    <!-- <h4>Add new member</h4> -->
+                    <!-- Legg til teammedlem -->
                     <div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
                 </div>
                 <div id="entry_submit_user">
@@ -186,12 +185,12 @@
                 <div id="member_list"></div>
             </form>
         </div>
+        <!-- Legg til oppgave-->
         <div class="section section_tasks">
             <h2 class="title_sections list_items_task">ARBEIDSOPPGAVE</h2>
             <form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
 
                 <div id="entry_task">
-                    <!-- <h4>New task</h4> -->
                     <div><input name="task" placeholder="Ny oppgave" /></div>
                 </div>
                 <div id="entry_submit_task">
@@ -200,6 +199,7 @@
                 <div id="task_list"></div>
             </form>
         </div>
+        <!-- Ny arbeidsoppgave -->
         <div class="section section_overview">
             <h2 class="title_sections">
                 <span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
@@ -217,9 +217,8 @@
 
     </div>
 
-
     <script src="js/script.js"></script>
-
+    </section>
 </body>
 
 </html>
