@@ -122,7 +122,7 @@ body {
 
 .addButton{
     position: absolute;
-    top: 215%;
+    top: 200%;
     left: 53%;
     transform: translate(-50%,-50%);
 }
@@ -149,7 +149,7 @@ h1 {
 
 .secondTitle{
     position: absolute;
-    top: 130%;
+    top: 120%;
     left: 52%;
     transform: translate(-50%,-50%);
 }
@@ -476,8 +476,8 @@ input[type=submit]:hover {
 
 .thirdTitle{
     position: absolute;
-    top: 240%;
-    left: 50%;
+    top: 220%;
+    left: 51.5%;
     transform: translate(-50%,-50%);
 }
 
