@@ -666,8 +666,8 @@ opacity: 0.8;
 /* Side navbar with icons and effects*/
 
 .wrapper .sidebar {
-    position: fixed;
     top: 60px;
+    position: fixed;
     background: #a9a9a9;
     width: 150px;
     height: 100%;
@@ -758,7 +758,8 @@ opacity: 0.8;
     width: 80%;
     max-width: 600px;
     margin: 50px auto;
-    transform: translate(25px, 3000px);
+    position: absolute;
+    transform: translate(670px, 3000px);
 }
 
 button.accordion{
