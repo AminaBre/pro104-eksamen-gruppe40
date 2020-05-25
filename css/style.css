@@ -375,7 +375,7 @@ h4 {
 }
 
 input {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 /* Input legg til ny teammedlem */
@@ -417,9 +417,16 @@ input[type=submit] {
 
 input,
 input[type=submit]:hover {
-	background-color: #eee;
+	background-color: #00ccff;
 	border: 1px solid #8ADCFF;
-	color: #8ADCFF;
+	color: #fff;
+}
+
+input,
+input[type=submit]:active {
+    border: none;
+    background-color: #00b8e6;
+    outline: none;
 }
 
 /* Bekreft knapp */
