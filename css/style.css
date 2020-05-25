@@ -758,8 +758,7 @@ opacity: 0.8;
     width: 80%;
     max-width: 600px;
     margin: 50px auto;
-    position; relative;
-    bottom: 0;
+    transform: translate(25px, 3000px);
 }
 
 button.accordion{

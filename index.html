@@ -133,90 +133,91 @@
     </section>
     
     <section class="thirdPage">
-    <div class="thirdTitle">
-        <h3>OVERSIKT</h3>
-    </div>
-
-    <!-- Arrow images -->
-
-    <img src="images/Arrow.png" class="arrowImg" alt="Arrow1">
-
-    <img src="images/Arrow.png" class="arrowImg2" alt="Arrow2">
-
-    <img src="images/Arrow.png" class="arrowImg3" alt="Arrow3">
-
-    <!-- Visual boxes -->
-
-    <div id="visual1"></div>
-    <div id="visual2"></div>
-    <div id="visual3"></div>
-    <div id="visual4"></div>
-
-        
-    <!-- Ikoner - status  -->
-
-
-    <img src="images/x.png" class="iconImg1" alt="X-img">
-
-    <img src="images/hourglass.png" class="iconImg2" alt="hourglass-img">
-
-    <img src="images/check.png" class="iconImg3" alt="check-img">
-
-
-    <button id="arrowBtn">
-        <i class="material-icons">arrow_upward</i>
-    </button>
-
-
-    <!-- Kom i gang bokser -->
-    <div class="containerBoxes" id="start_nå">
-        <div class="section section_users">
-            <h2 class="title_sections list_items_member">TEAMMEDLEM</h2>
-            <form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
-
-                <div id="entry_username">
-                    <!-- Legg til teammedlem -->
-                    <div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
-                </div>
-                <div id="entry_submit_user">
-                    <div><input type="submit" name="submit_user" value="Legg til medlem" /></div>
-                </div>
-                <div id="member_list"></div>
-            </form>
-        </div>
-        <!-- Legg til oppgave-->
-        <div class="section section_tasks">
-            <h2 class="title_sections list_items_task">ARBEIDSOPPGAVE</h2>
-            <form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
-
-                <div id="entry_task">
-                    <div><input name="task" placeholder="Ny oppgave" /></div>
-                </div>
-                <div id="entry_submit_task">
-                    <div><input type="submit" name="submit_task" value="Legg til oppgave" /></div>
-                </div>
-                <div id="task_list"></div>
-            </form>
-        </div>
-        <!-- Ny arbeidsoppgave -->
-        <div class="section section_overview">
-            <h2 class="title_sections">
-                <span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
-            <div id="confirm"></div>
-            <div id="overview_list"></div>
+        <div class="thirdTitle">
+            <h3>OVERSIKT</h3>
         </div>
 
-        <!--
-            Her vil nok mest sannsynlig contact form'et ligge!
+        <!-- Arrow images -->
 
-        <section class="contact-form-main">
+        <img src="images/Arrow.png" class="arrowImg" alt="Arrow1">
+
+        <img src="images/Arrow.png" class="arrowImg2" alt="Arrow2">
+
+        <img src="images/Arrow.png" class="arrowImg3" alt="Arrow3">
+
+        <!-- Visual boxes -->
+
+        <div id="visual1"></div>
+        <div id="visual2"></div>
+        <div id="visual3"></div>
+        <div id="visual4"></div>
+
             
-        </section>
-        -->
+        <!-- Ikoner - status  -->
 
-    </div>
 
-    <div class="container">
+        <img src="images/x.png" class="iconImg1" alt="X-img">
+
+        <img src="images/hourglass.png" class="iconImg2" alt="hourglass-img">
+
+        <img src="images/check.png" class="iconImg3" alt="check-img">
+
+
+        <button id="arrowBtn">
+            <i class="material-icons">arrow_upward</i>
+        </button>
+
+
+        <!-- Kom i gang bokser -->
+        <div class="containerBoxes" id="start_nå">
+            <div class="section section_users">
+                <h2 class="title_sections list_items_member">TEAMMEDLEM</h2>
+                <form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
+
+                    <div id="entry_username">
+                        <!-- Legg til teammedlem -->
+                        <div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
+                    </div>
+                    <div id="entry_submit_user">
+                        <div><input type="submit" name="submit_user" value="Legg til medlem" /></div>
+                    </div>
+                    <div id="member_list"></div>
+                </form>
+            </div>
+            <!-- Legg til oppgave-->
+            <div class="section section_tasks">
+                <h2 class="title_sections list_items_task">ARBEIDSOPPGAVE</h2>
+                <form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
+
+                    <div id="entry_task">
+                        <div><input name="task" placeholder="Ny oppgave" /></div>
+                    </div>
+                    <div id="entry_submit_task">
+                        <div><input type="submit" name="submit_task" value="Legg til oppgave" /></div>
+                    </div>
+                    <div id="task_list"></div>
+                </form>
+            </div>
+            <!-- Ny arbeidsoppgave -->
+            <div class="section section_overview">
+                <h2 class="title_sections">
+                    <span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
+                <div id="confirm"></div>
+                <div id="overview_list"></div>
+            </div>
+
+            <!--
+                Her vil nok mest sannsynlig contact form'et ligge!
+
+            <section class="contact-form-main">
+                
+            </section>
+            -->
+
+        </div>
+    </section>
+
+    <div class="container" id="bottom">
         <h1>Questions</h1>
 
         <button class="accordion">How did we communicate?</button>
@@ -252,9 +253,8 @@
             </p>
         </div>
     </div>
-
+    
     <script src="js/script.js"></script>
-    </section>
 </body>
 
 </html>
