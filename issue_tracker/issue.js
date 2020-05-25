@@ -7,7 +7,7 @@ const issueService = {
         return issues ? JSON.parse(issues) : []
     },
     getIssue(id) {
-        return.this.getIssues.find(issue => issue.id === id);
+        return this.getIssues.find(issue => issue.id === id);
     },
     saveIssue(issue) {
         const issues = this.getIssues();
@@ -32,6 +32,23 @@ function createIssueTemplate({ id, status, description, severity, assignedTo }) 
         <a href="#" class="btn btn-danger" onclick="deleteIssue('${id}')">Delete</a>
         </div>`
     );
+}
+
+function issueList() {
+    return localStorage.getItem('issues') ?
+        JSON.parse(localStorage.getItem('issues')) : [];
+}
+
+function fetchIssue() {
+    const issue = this.issueList();
+    const issueList = document.getElementById('issueList');
+    let issueListHtml = '';
+
+    if (issues) {
+        issues.forEach(element => issueListHtml += createIssueTemplate(element));
+    }
+
+    issueList.innerHTML = issueListHtml;
 }
 
 function
