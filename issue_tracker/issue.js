@@ -64,7 +64,7 @@ function saveIssue(e) {
             description,
             severity,
             assignedTo,
-            status: 'Open'
+            status: 'Open/Åpen'
         }
     );
 
@@ -74,4 +74,28 @@ function saveIssue(e) {
     fetchIssues();
 
     e.preventDefault();
+}
+
+function setStatusClosed(id) {
+    const issues = this.issueList();
+
+    if (issues.length) {
+        const updateIssue = issues.find(issueToClose => issueToClose.id === id);
+
+        const indOf = issues.indexOf(updateIssue)
+        issues.splice(indOf, 1)
+        issues.push(
+            {
+                id: updateIssue.id,
+                description: updateIssue.description,
+                severity: updateIssue.severity,
+                assignedTo: updateIssue.assignedTo,
+                status: 'Closed/Lukket'
+            }
+        )
+
+        localStorage.setItem('issues', JSON.stringify(issues));
+
+        fetchIssues();
+    }
 }
