@@ -72,66 +72,83 @@
     </nav>
 
     <section class="firstPage">
-    <header>
-        <div class="mainTitle">
-            <h1>ARBEIDS-FORDELEREN</h1>
+        <header>
+            <div class="mainTitle">
+                <h1>ARBEIDS-FORDELEREN</h1>
+            </div>
+        </header>
+
+        <!--Denne seksjonen kan evt bare slettes-->
+        <section class="test-section">
+            <div class="test">
+                <div id="no-drop" class="drag-drop"> #no-drop </div>
+
+                <div id="yes-drop" class="drag-drop"> #yes-drop </div>
+
+                <div id="outer-dropzone" class="dropzone">
+                    #outer-dropzone
+                    <div id="inner-dropzone" class="dropzone">#inner-dropzone</div>
+                </div>
+            </div>
+        </section>
+        <!--Denne sek-->
+
+        <!-- Menu button -->
+
+        <div class="button">
+            <a href="#start_nå" class="btn">START NÅ</a>
         </div>
-    </header>
-
-    <!-- Menu button -->
-
-    <div class="button">
-        <a href="#start_nå" class="btn">START NÅ</a>
-    </div>
 
 
 
-    <!-- Questionmark with info -->
+        <!-- Questionmark with info -->
 
-    <div class="questionInfo"><img src="images/questionMrk.png" class="questionmark" alt="Questionmark">
-        <div class="overlay">
-            <div class="text">Trykk på "Start nå" for å begynne tildelingen av arbeidsoppgaver til teammedlemmer.</div>
+        <div class="questionInfo"><img src="images/questionMrk.png" class="questionmark" alt="Questionmark">
+            <div class="overlay">
+                <div class="text">Trykk på "Start nå" for å begynne tildelingen av arbeidsoppgaver til teammedlemmer.
+                </div>
+            </div>
         </div>
-    </div>
     </section>
-    
+
     <section class="secondPage">
-     <div class="secondTitle">
-        <h2>KOM I GANG</h2>
-    </div>
-
-    <!-- Teammember info -->
-
-    <div class="teammemberInfo"><img src="images/questionMrk.png" class="teammemberInfoImg" alt="Questionmark2">
-        <div class="teammemberOverlay">
-            <div class="teamTxt">Skriv inn navnet på et teammedlem, trykk deretter "legg til."</div>
+        <div class="secondTitle">
+            <h2>KOM I GANG</h2>
         </div>
-    </div>
 
-    <!-- Oppgave info -->
+        <!-- Teammember info -->
 
-    <div class="oppgaveInfo"><img src="images/questionMrk.png" class="oppgaveInfoImg" alt="Questionmark3">
-        <div class="oppgaveOverlay">
-            <div class="oppgaveTxt">Skriv inn en oppgave, deretter trykk "legg til."</div>
+        <div class="teammemberInfo"><img src="images/questionMrk.png" class="teammemberInfoImg" alt="Questionmark2">
+            <div class="teammemberOverlay">
+                <div class="teamTxt">Skriv inn navnet på et teammedlem, trykk deretter "legg til."</div>
+            </div>
         </div>
-    </div>
 
-    <!-- Date info -->
+        <!-- Oppgave info -->
 
-    <div class="dateInfo"><img src="images/questionMrk.png" class="dateInfoImg" alt="Questionmark4">
-        <div class="dateOverlay">
-            <div class="oppgaveTxt">Trykk først på et teammedlem, deretter oppgaven teammedlemmet skal utføre. Når du er
-                ferdig med å tildele oppgaver, trykk "gå videre".</div>
+        <div class="oppgaveInfo"><img src="images/questionMrk.png" class="oppgaveInfoImg" alt="Questionmark3">
+            <div class="oppgaveOverlay">
+                <div class="oppgaveTxt">Skriv inn en oppgave, deretter trykk "legg til."</div>
+            </div>
         </div>
-    </div>
 
-    <!-- Add tasks button -->
+        <!-- Date info -->
 
-    <div class="addButton">
-        <a href="#main-page" class="addBtn">GÅ VIDERE</a>
-    </div>
+        <div class="dateInfo"><img src="images/questionMrk.png" class="dateInfoImg" alt="Questionmark4">
+            <div class="dateOverlay">
+                <div class="oppgaveTxt">Trykk først på et teammedlem, deretter oppgaven teammedlemmet skal utføre. Når
+                    du er
+                    ferdig med å tildele oppgaver, trykk "gå videre".</div>
+            </div>
+        </div>
+
+        <!-- Add tasks button -->
+
+        <div class="addButton">
+            <a href="#main-page" class="addBtn">GÅ VIDERE</a>
+        </div>
     </section>
-    
+
     <section class="thirdPage">
         <div class="thirdTitle">
             <h3>OVERSIKT</h3>
@@ -152,7 +169,7 @@
         <div id="visual3"></div>
         <div id="visual4"></div>
 
-            
+
         <!-- Ikoner - status  -->
 
 
@@ -253,7 +270,18 @@
             </p>
         </div>
     </div>
-    
+    <script type="module">
+        import interact from
+            'https://cdn.interactjs.io/v1.9.17/interactjs/index.js'
+
+        interact('.item').draggable({
+            onmove(event) {
+                console.log(event.pageX,
+                    event.pageY)
+            }
+        })
+    </script>
+    <script src="/js/test-drag-and-drop.js"></script>
     <script src="js/script.js"></script>
 </body>
 

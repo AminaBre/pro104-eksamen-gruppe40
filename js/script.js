@@ -1,27 +1,86 @@
 // Navigation Bar
-$(document).ready(function() {
-    $(".hamburger").click(function(){
-        $(".wrapper").toggleClass("collapse");
-    });
+$(document).ready(function () {
+	$(".hamburger").click(function () {
+		$(".wrapper").toggleClass("collapse");
+	});
 });
 
 // Pil
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $(window).scroll(function() {
-        if($(this).scrollTop() > 40) {
-            $('#arrowBtn').fadeIn();
-        } else {
-            $('#arrowBtn').fadeOut();
-        }
-    });
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 40) {
+			$('#arrowBtn').fadeIn();
+		} else {
+			$('#arrowBtn').fadeOut();
+		}
+	});
 
-    $('#arrowBtn').click(function(){
-        $('html, body').animate({scrollTop : 0}, 0);
-    });
+	$('#arrowBtn').click(function () {
+		$('html, body').animate({ scrollTop: 0 }, 0);
+	});
 });
 
 // KOM-I-GANG-BOKSER
+
+//!Drag and drop test start
+/* The dragging code for '.draggable' from the demo above
+ * applies to this demo as well so it doesn't have to be repeated. */
+
+// enable draggables to be dropped into this
+interact('.dropzone').dropzone({
+	// only accept elements matching this CSS selector
+	accept: '#yes-drop',
+	// Require a 75% element overlap for a drop to be possible
+	overlap: 0.75,
+
+	// listen for drop related events:
+
+	ondropactivate: function (event) {
+		// add active dropzone feedback
+		event.target.classList.add('drop-active')
+	},
+	ondragenter: function (event) {
+		var draggableElement = event.relatedTarget
+		var dropzoneElement = event.target
+
+		// feedback the possibility of a drop
+		dropzoneElement.classList.add('drop-target')
+		draggableElement.classList.add('can-drop')
+		draggableElement.textContent = 'Dragged in'
+	},
+	ondragleave: function (event) {
+		// remove the drop feedback style
+		event.target.classList.remove('drop-target')
+		event.relatedTarget.classList.remove('can-drop')
+		event.relatedTarget.textContent = 'Dragged out'
+	},
+	ondrop: function (event) {
+		event.relatedTarget.textContent = 'Dropped'
+	},
+	ondropdeactivate: function (event) {
+		// remove active dropzone feedback
+		event.target.classList.remove('drop-active')
+		event.target.classList.remove('drop-target')
+	}
+})
+
+interact('.drag-drop')
+	.draggable({
+		inertia: true,
+		modifiers: [
+			interact.modifiers.restrictRect({
+				restriction: 'parent',
+				endOnly: true
+			})
+		],
+		autoScroll: true,
+		// dragMoveListener from the dragging demo above
+		listeners: { move: dragMoveListener }
+	})
+
+//!Drag and drop test slutt
+
 
 //Legg til Ansatt
 function addMember(event) {
@@ -59,19 +118,16 @@ function addTask(event) {
 	}
 }
 //oppgave
-function listAssignments()
-{
+function listAssignments() {
 	const assignmentList = JSON.parse(window.localStorage.getItem("assignments")) || [];
 
 	const list = document.getElementById("overview_list");
 
-	while(list.firstChild)
-	{
+	while (list.firstChild) {
 		list.removeChild(list.firstChild);
 	}
 
-	for(const i in assignmentList)
-	{
+	for (const i in assignmentList) {
 		const newAssignment = document.createElement("div");
 		newAssignment.className = "list_items list_items_assignment";
 		list.appendChild(newAssignment);
@@ -147,56 +203,47 @@ const hoverColor = "#111111";
 let prompted = false;
 
 
-function selectMember()
-{
-	if(prevMember)
-	{
+function selectMember() {
+	if (prevMember) {
 		prevMember.style.backgroundColor = normalColor;
 		prevMember = null;
 	}
 
-	if(selectedMember == this)
-	{
+	if (selectedMember == this) {
 		selectedMember.style.backgroundColor = normalColor;
 		selectedMember = null;
 	}
-	else
-	{
+	else {
 		selectedMember = this;
 		selectedMember.style.backgroundColor = selectedColor;
 
 		prevMember = selectedMember;
 	}
-	
+
 	confirmAssignment();
 }
 
-function selectTask()
-{
-	if(prevTask)
-	{
+function selectTask() {
+	if (prevTask) {
 		prevTask.style.backgroundColor = normalColor;
 		prevTask = null;
 	}
 
-	if(selectedTask == this)
-	{
+	if (selectedTask == this) {
 		selectedTask.style.backgroundColor = normalColor;
 		selectedTask = null;
 	}
-	else
-	{
+	else {
 		selectedTask = this;
 		selectedTask.style.backgroundColor = selectedColor;
 
 		prevTask = selectedTask;
 	}
-	
+
 	confirmAssignment();
 }
 
-function confirmAssignment()
-{
+function confirmAssignment() {
 	const confirmSection = document.getElementById("confirm");
 
 	const confirmButton = document.createElement("button");
@@ -205,24 +252,19 @@ function confirmAssignment()
 	confirmButton.className = "title_sections";
 	confirmButton.id = "confirmButton";
 
-	if(selectedMember && selectedTask)
-	{
-		if(!document.querySelector("#confirmButton"))
-		{
+	if (selectedMember && selectedTask) {
+		if (!document.querySelector("#confirmButton")) {
 			confirmSection.appendChild(confirmButton);
 		}
-		confirmButton.addEventListener("click", function(){
+		confirmButton.addEventListener("click", function () {
 			confirmSection.removeChild(confirmButton);
-			assign();	
+			assign();
 		});
 		prompted = true;
 	}
-	else
-	{
-		if(prompted)
-		{
-			if(document.querySelector("#confirmButton"))
-			{
+	else {
+		if (prompted) {
+			if (document.querySelector("#confirmButton")) {
 				confirmSection.removeChild(document.querySelector("#confirmButton"));
 				prompted = false;
 			}
@@ -230,20 +272,18 @@ function confirmAssignment()
 	}
 }
 
-function assign()
-{
-	if(selectedMember && selectedTask)
-	{
+function assign() {
+	if (selectedMember && selectedTask) {
 		const assignmentList = JSON.parse(window.localStorage.getItem("assignments")) || [];
 
 		const newAssignment =
-			{
-				'member':selectedMember.innerHTML,
-				'task':selectedTask.innerHTML
-			};
+		{
+			'member': selectedMember.innerHTML,
+			'task': selectedTask.innerHTML
+		};
 
 		assignmentList.push(newAssignment);
-		window.localStorage.setItem('assignments', JSON.stringify(assignmentList));			
+		window.localStorage.setItem('assignments', JSON.stringify(assignmentList));
 
 		selectedMember.style.backgroundColor = normalColor;
 		selectedTask.style.backgroundColor = normalColor;
@@ -254,18 +294,14 @@ function assign()
 	listAssignments();
 }
 
-function onHover()
-{
-	if(this != selectedMember && this != selectedTask)
-	{
-		this.style.backgroundColor = hoverColor;	
+function onHover() {
+	if (this != selectedMember && this != selectedTask) {
+		this.style.backgroundColor = hoverColor;
 	}
 }
 
-function onLeave()
-{
-	if(this != selectedMember && this != selectedTask)
-	{
+function onLeave() {
+	if (this != selectedMember && this != selectedTask) {
 		this.style.backgroundColor = normalColor;
 	}
 }
@@ -274,15 +310,15 @@ function onLeave()
 var accordions = document.getElementsByClassName("accordion");
 
 for (var i = 0; i < accordions.length; i++) {
-    accordions[i].onclick = function () {
-        var content = this.nextElementSibling;
+	accordions[i].onclick = function () {
+		var content = this.nextElementSibling;
 
-        if (content.style.maxHeight) {
-            //accordion is open, we need to close it
-            content.style.maxHeight = null;
-        } else {
-            //accordion is closed
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    }
+		if (content.style.maxHeight) {
+			//accordion is open, we need to close it
+			content.style.maxHeight = null;
+		} else {
+			//accordion is closed
+			content.style.maxHeight = content.scrollHeight + "px";
+		}
+	}
 }
