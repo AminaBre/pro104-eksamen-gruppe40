@@ -99,3 +99,17 @@ function setStatusClosed(id) {
         fetchIssues();
     }
 }
+
+function deleteIssue(id) {
+    const issues = this.issueList();
+
+    if (issues.length) {
+        const issueToDelete = issues.find(issueToFind => issueToFind.id === id);
+
+        const indOf = issues.indexOf(issueToDelete)
+        issues.splice(indOf, 1)
+        localStorage.setItem('issues', JSON.stringify(issues));
+
+        fetchIssues();
+    }
+}
