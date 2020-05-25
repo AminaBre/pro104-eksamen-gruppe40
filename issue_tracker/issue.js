@@ -51,4 +51,27 @@ function fetchIssue() {
     issueList.innerHTML = issueListHtml;
 }
 
-function
+function saveIssue(e) {
+    const id = chance.guid();
+    const description = document.getElementById('issueDescInput').value || 'Ingen beskrivelse gitt';
+    const severity = document.getElementById('issueSeverityInput').value;
+    const assignedTo = document.getElementById('issueAssignedToInput').value || 'Ingen brukere tildelt';
+    const issues = JSON.parse(localStorage.getItem('issues')) || [];
+
+    issues.push(
+        {
+            id,
+            description,
+            severity,
+            assignedTo,
+            status: 'Open'
+        }
+    );
+
+    localStorage.setItem('issues', JSON.stringify(issues))
+    document.getElementById('issueInputForm').reset();
+
+    fetchIssues();
+
+    e.preventDefault();
+}
