@@ -8,13 +8,18 @@
 }
 
 body {
-    
+    position: relative;
+    font-size: 100%;
     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../mainpage_background.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+body, h1, h2, h2, h4, h5, h6 {
+    font-size-adjust: 0.5;
 }
 
 
@@ -67,7 +72,7 @@ body {
 
 .questionInfo{
     
-    position: relative;
+    position: absolute;
     width: 100%;
     cursor: pointer;
 
@@ -171,7 +176,7 @@ h1 {
 
 .teammemberInfo{
     
-    position: relative;
+    position: absolute;
     width: 100%;
     cursor: pointer;
 
@@ -226,7 +231,7 @@ h1 {
 
 .oppgaveInfo{
     
-    position: relative;
+    position: absolute;
     width: 100%;
     cursor: pointer;
 
@@ -278,7 +283,7 @@ h1 {
 
 .dateInfo{
     
-    position: relative;
+    position: absolute;
     width: 100%;
     cursor: pointer;
 
