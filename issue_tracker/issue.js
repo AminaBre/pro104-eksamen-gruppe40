@@ -41,6 +41,10 @@ function issuesList() {
         [];
 }
 
+/*
+Denne funksjonen henter ut problemer/issues
+*/
+
 function fetchIssues() {
     const issues = this.issuesList();
     const issuesList = document.getElementById('issuesList');
@@ -53,6 +57,10 @@ function fetchIssues() {
     issuesList.innerHTML = issueListHtml;
 }
 
+
+/*
+Denne funksjonen lagrer issues som blir skrevet inn i input form'et
+*/
 function saveIssue(e) {
     const id = chance.guid();
     const description = document.getElementById('issueDescInput').value || 'No Description Provided';
@@ -76,6 +84,10 @@ function saveIssue(e) {
     e.preventDefault();
 }
 
+
+/*
+Denne funksjonen gjør at du kan avslutte // stenge // close et problem (issue)
+*/
 function setStatusClosed(id) {
     const issues = this.issuesList();
 
@@ -98,6 +110,9 @@ function setStatusClosed(id) {
     }
 }
 
+/*
+    Denne funksjonen sletter problemer som blir laget
+*/
 function deleteIssue(id) {
     const issues = this.issuesList();
 
