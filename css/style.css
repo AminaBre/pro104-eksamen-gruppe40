@@ -48,7 +48,7 @@ body, h1, h2, h2, h4, h5, h6 {
 /* Mainpage button */
 
 .button{
-    transform: translate(760px, 600px);
+    transform: translate(645px, 600px);
 }
 
 .btn{
@@ -180,8 +180,8 @@ h1 {
     
     display: block;
     position: absolute;
-    left: 305px;
-    top: 1400px;
+    left: 235px;
+    top: 1950px;
     width: 6%;
     
 }
@@ -190,8 +190,8 @@ h1 {
     
     margin: 0px;
     position: absolute;
-    top: 1410px;
-    left: 14%;
+    top: 1950px;
+    left: 9%;
     opacity: 0;
     margin: 0px;
     background: #cdcdcd;
@@ -235,8 +235,8 @@ h1 {
     
     display: block;
     position: absolute;
-    right: 625px;
-    top: 1400px;
+    right: 845px;
+    top: 1950px;
     width: 6%;
     
 }
@@ -245,8 +245,8 @@ h1 {
     
     margin: 0px;
     position: absolute;
-    top: 1420px;
-    left: 606px;
+    top: 1965px;
+    left: 396px;
     opacity: 0;
     background: #cdcdcd;
     width: 300px;
@@ -287,8 +287,8 @@ h1 {
     
     display: block;
     position: absolute;
-    right: 230px;
-    top: 1400px;
+    right: 615px;
+    top: 1950px;
     width: 6%;
     
 }
@@ -297,8 +297,8 @@ h1 {
     
     margin: 0px;
     position: absolute;
-    top: 1380px;
-    left: 1000px;
+    top: 1910px;
+    left: 660px;
     opacity: 0;
     background: #cdcdcd;
     width: 300px;
@@ -488,6 +488,7 @@ input[type=submit]:active {
     margin: 10px;
     height: 160px;
     border: solid 3px white;
+    position: relative;
 }
 
 .unoDosTres {
@@ -510,6 +511,7 @@ input[type=submit]:active {
 .hovered {
   background: #f4f4f4;
   border-style: dashed;
+position: absolute;
 }
 
 /* OERSKRIFT */
