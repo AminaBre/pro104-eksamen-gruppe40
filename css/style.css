@@ -10,7 +10,7 @@
 body {
     position: relative;
     font-size: 100%;
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../mainpage_background.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/mainpage_background.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;

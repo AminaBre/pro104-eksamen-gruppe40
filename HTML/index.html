@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Arbeidsfordeleren</title>
     <script src="https://kit.fontawesome.com/84093ac266.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./contact-form/contact-form.html">
+                        <a href="/HTML/contact-form.html">
                             <span class="icon">
                                 <i class="far fa-paper-plane"></i>
                             </span>
@@ -146,57 +146,55 @@
             <h3>OVERSIKT</h3>
         </div>
 
-        
 
 
-<<<<<<< HEAD
-        
-        <!-- Drag n drop -->
-        
+
+        <<<<<<< HEAD <!-- Drag n drop -->
+
             <div class="try">
-    <div class="hey">
-    <div class="fill" draggable="true"> </div>
-  </div>
+                <div class="hey">
+                    <div class="fill" draggable="true"> </div>
+                </div>
 
-  <div class="empty" id="uno">
-  </div>
+                <div class="empty" id="uno">
+                </div>
 
-  <div class="empty" id="dos">
-  </div>
+                <div class="empty" id="dos">
+                </div>
 
-  <div class="empty" id="tres">
-  </div>
-</div>
+                <div class="empty" id="tres">
+                </div>
+            </div>
 
-        <!-- Ikoner - status  -->
-
-
-        <img src="images/x.png" class="iconImg1" alt="X-img">
-
-        <img src="images/hourglass.png" class="iconImg2" alt="hourglass-img">
-
-        <img src="images/check.png" class="iconImg3" alt="check-img">
-
-=======
-        <div id="visual1"></div>
-        <div id="visual2"></div>
-        <div id="visual3"></div>
-        <div id="visual4"></div>
-        -->
->>>>>>> 850ee90b967ecfa9c257dc7fb22291bca273c2a1
-
-        <button id="arrowBtn">
-            <i class="material-icons">arrow_upward</i>
-        </button>
+            <!-- Ikoner - status  -->
 
 
-        <!-- Kom i gang bokser -->
-        
+            <img src="images/x.png" class="iconImg1" alt="X-img">
+
+            <img src="images/hourglass.png" class="iconImg2" alt="hourglass-img">
+
+            <img src="images/check.png" class="iconImg3" alt="check-img">
+
+
+            <div id="visual1"></div>
+            <div id="visual2"></div>
+            <div id="visual3"></div>
+            <div id="visual4"></div>
+
+
+
+            <button id="arrowBtn">
+                <i class="material-icons">arrow_upward</i>
+            </button>
+
+
+            <!-- Kom i gang bokser -->
+
             <div class="containerBoxes" id="start_nå">
                 <div class="section section_users">
                     <h2 class="title_sections list_items_member">TEAMMEDLEM</h2>
                     <form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
-    
+
                         <div id="entry_username">
                             <!-- Legg til teammedlem -->
                             <div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
@@ -211,7 +209,7 @@
                 <div class="section section_tasks">
                     <h2 class="title_sections list_items_task">ARBEIDSOPPGAVE</h2>
                     <form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
-    
+
                         <div id="entry_task">
                             <div><input name="task" placeholder="Ny oppgave" /></div>
                         </div>
@@ -226,36 +224,38 @@
                 <div class="section section_overview">
                     <h2 class="title_sections">
                         <span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
-                    <div id="confirm"></div><ul>
-                    <li id="overview_list" draggable="true"></li></ul>
+                    <div id="confirm"></div>
+                    <ul>
+                        <li id="overview_list" draggable="true"></li>
+                    </ul>
                 </div>
 
-            <!-- Drag n drop -->
+                <!-- Drag n drop -->
 
-            <div class="hey">
-                <div class="fill" draggable="true"></div>
-            </div>
+                <div class="hey">
+                    <div class="fill" draggable="true"></div>
+                </div>
 
-            <!-- Arrow images -->
-            <div class="arrowImgs">
-                <div><img src="images/Arrow.png" class="arrowImg" alt="Arrow1"></div>
-                <div><img src="images/Arrow.png" class="arrowImg2" alt="Arrow2"></div>
-                <div><img src="images/Arrow.png" class="arrowImg3" alt="Arrow3"></div>
-            </div>
-            
-            <div class="unoDosTres">
-                <div class="empty" id="uno"></div>
-                <div class="empty" id="dos"></div>
-                <div class="empty" id="tres"></div>
-            </div>
+                <!-- Arrow images -->
+                <div class="arrowImgs">
+                    <div><img src="images/Arrow.png" class="arrowImg" alt="Arrow1"></div>
+                    <div><img src="images/Arrow.png" class="arrowImg2" alt="Arrow2"></div>
+                    <div><img src="images/Arrow.png" class="arrowImg3" alt="Arrow3"></div>
+                </div>
 
-            <!-- Ikoner - status  -->
-            <div class="icons">
-                <img src="images/check.png" class="iconImg1" alt="check-img">
-                <img src="images/hourglass.png" class="iconImg2" alt="hourglass-img">
-                <img src="images/x.png" class="iconImg3" alt="X-img">
+                <div class="unoDosTres">
+                    <div class="empty" id="uno"></div>
+                    <div class="empty" id="dos"></div>
+                    <div class="empty" id="tres"></div>
+                </div>
+
+                <!-- Ikoner - status  -->
+                <div class="icons">
+                    <img src="images/check.png" class="iconImg1" alt="check-img">
+                    <img src="images/hourglass.png" class="iconImg2" alt="hourglass-img">
+                    <img src="images/x.png" class="iconImg3" alt="X-img">
+                </div>
             </div>
-        </div>
     </section>
 
     <div class="container">
