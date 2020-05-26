@@ -478,19 +478,16 @@ input[type=submit]:active {
 
 }
 
+#overview_list {
+    
+    cursor: pointer;
+    position: relative;
+    
+}
+
 /* THIRD PAGE  */
 
 /* Boxes styling  */
-
-.fill {
-  background-image: url('https://source.unsplash.com/random/150x150');
-  position: relative;
-  height: 150px;
-  width: 150px;
-  top: 5px;
-  left: 5px;
-  cursor: pointer;
-}
 
 .hold {
   border: solid 5px #ccc;
