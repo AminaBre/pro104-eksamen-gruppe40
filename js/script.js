@@ -285,7 +285,7 @@ function dragStart() {
 }
 
 function dragEnd() {
-  this.className = 'fill';
+  this.className += 'fill';
 }
 
 function dragOver(e) {
@@ -298,10 +298,10 @@ function dragEnter(e) {
 }
 
 function dragLeave() {
-  this.className = 'empty';
+  this.className += 'empty';
 }
 
 function dragDrop() {
-  this.className = 'empty';
+  this.className += 'empty';
   this.append(overviewList);
 }
