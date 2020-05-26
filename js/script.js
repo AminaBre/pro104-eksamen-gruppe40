@@ -127,11 +127,6 @@ function listTasks() {
 
 listTasks();
 
-
-
-
-//////////////////////////////////
-
 //legg til Oppgaver
 let selectedMember = null;
 let selectedTask = null;
