@@ -750,5 +750,9 @@ button.accordion:hover{
 }
 
 #start_nå {
-    transform: translateY(1700px);
+    transform: translateY(1620px);
+}
+
+#gå_videre {
+    transform: translateY(2500px);
 }
