@@ -344,21 +344,25 @@ h4 {
 
 /* Divides the content to three sections */
 .containerBoxes {
-	margin: 26em 11em;
+    height: 100%;
+    margin-left: 10%;
+    padding: 5px;
     display: flex;
-    justify-content: space-around;
+    width: 80%;
+    transform: translateY(1000px);
 }
 
 /* Input boksene  */
 .section {
-	margin-top: 1.5em;
+    margin-top: 1.5em;
+    margin: 10px;
 	padding: 0px 5px 15px 5px;
 	background: #cdcdcd;
     opacity: 90%;
 	/* border: 1px solid rgba(202, 202, 202, 0.801); */
 	box-shadow: 1px 1px rgba(9, 30, 66, .25);
 	border-radius: 4px;
-    width: 25%;
+    width: 100%;
     height: 90%;
     opacity: 0.9;
 }
@@ -494,43 +498,36 @@ input[type=submit]:active {
 }
 
 .hey{
-    
-    position: absolute;
-    top: 1750px;
-    left: 300px;
-    width: 380px;
+    width: 20%;
     height: 500px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
     border: solid 3px white;
     background: #fff;
 }
 
-
-.empty {
-    position: relative;
-    top: 1760px;
-    left: 800px;
+.empty { 
     width: 380px;
-  height: 160px;
-  margin: 10px;
-  border: solid 3px white;
+    margin: 10px;
+    height: 160px;
+    border: solid 3px white;
+}
+
+.unoDosTres {
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 #uno {
-    
-    background: #97C0A0;
-        
+    background: #97C0A0;  
 }
 
 #dos {
-    
     background: #E9E9AF;
 }
 
-#tres {
-    
+#tres { 
     background: #E49E9E;
-    
 }
 
 .hovered {
@@ -539,7 +536,6 @@ input[type=submit]:active {
 }
 
 /* OVERSKRIFT */
-
 
 .thirdTitle{
     position: absolute;
@@ -563,64 +559,51 @@ input[type=submit]:active {
 
 /* Arrow img */
 
-.arrowImg{
-    
-    position: absolute;
-    width: 5%;
-    top: 1980px;
-    left: 697px;
+.arrowImgs {
+}
+
+.arrowImg{ 
+    width: 170px;
     opacity: 0.8;
 }
 
 .arrowImg2{
     
-    position: absolute;
-    width: 5%;
-    top: 1815px;
-    left: 697px;
+    
+    width: 170px;
     opacity: 0.8;
 }
 
 .arrowImg3{
     
-    position: absolute;
-    width: 5%;
-    top: 2150px;
-    left: 697px;
+    
+    width: 170px;
     opacity: 0.8;
 }
 
 
 /* Icons */
 
+.icons {
+    margin: 10px;
+}
+
 .iconImg1{
-    
-    position: absolute;
-    width: 4%;
-    top: 2150px;
-    left: 1220px;
+    width: 170px;
     opacity: 0.9;
     
 }
 
 .iconImg2{
-    
-    position: absolute;
-    width: 6%;
-    top: 1970px;
-    left: 1210px;
+    margin-top: 20px;
+    width: 120px;
     opacity: 0.9;
-    
 }
 
 .iconImg3{
-    
-    position: absolute;
-    width: 6%;
-    top: 1800px;
-    left: 1210px;
+    margin-top: 45px;
+    width: 115px;
     opacity: 0.9;
-    
 }
 
 /* NAVBAR */
@@ -638,7 +621,6 @@ input[type=submit]:active {
     background: #a9a9a9;
     padding: 15px 17px;
     cursor: pointer;
-    
 }
 
 .wrapper .navbar .hamburger div {
