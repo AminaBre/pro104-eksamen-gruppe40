@@ -127,10 +127,7 @@ body, h1, h2, h2, h4, h5, h6 {
 /* Add button */
 
 .addButton{
-    position: absolute;
-    top: 203%;
-    left: 53%;
-    transform: translate(-50%,-50%);
+    transform: translate(1192px, 2700px);
 }
 
 .addBtn{
@@ -720,7 +717,7 @@ input[type=submit]:active {
     max-width: 600px;
     margin: 50px auto;
     position: absolute;
-    transform: translate(670px, 3000px);
+    transform: translate(970px, 3300px);
 }
 
 button.accordion{
@@ -754,5 +751,9 @@ button.accordion:hover{
 }
 
 #gå_videre {
-    transform: translateY(2500px);
+    transform: translateY(3000px);
+}
+
+.ekstraPlass {
+    transform: translateY(10000px);
 }
