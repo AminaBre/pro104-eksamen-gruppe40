@@ -110,7 +110,6 @@
         </div>
 
         <!-- Teammember info -->
-
         <div class="teammemberInfo"><img src="images/questionMrk.png" class="teammemberInfoImg" alt="Questionmark2">
             <div class="teammemberOverlay">
                 <div class="teamTxt">Skriv inn navnet på et teammedlem, trykk deretter "legg til."</div>
@@ -197,42 +196,42 @@
 
 
         <!-- Kom i gang bokser -->
-        <div class="containerBoxes" id="start_nå">
-            <div class="section section_users">
-                <h2 class="title_sections list_items_member">TEAMMEDLEM</h2>
-                <form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
-
-                    <div id="entry_username">
-                        <!-- Legg til teammedlem -->
-                        <div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
-                    </div>
-                    <div id="entry_submit_user">
-                        <div><input type="submit" name="submit_user" value="Legg til medlem" /></div>
-                    </div>
-                    <div id="member_list"></div>
-                </form>
-            </div>
-            <!-- Legg til oppgave-->
-            <div class="section section_tasks">
-                <h2 class="title_sections list_items_task">ARBEIDSOPPGAVE</h2>
-                <form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
-
-                    <div id="entry_task">
-                        <div><input name="task" placeholder="Ny oppgave" /></div>
-                    </div>
-                    <div id="entry_submit_task">
-                        <div><input type="submit" name="submit_task" value="Legg til oppgave" /></div>
-                    </div>
-                    <div id="task_list"></div>
-                </form>
-            </div>
-            <!-- Ny arbeidsoppgave -->
-            <div class="section section_overview">
-                <h2 class="title_sections">
-                    <span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
-                <div id="confirm"></div>
-                <div id="overview_list"></div>
-            </div>
+            <div class="containerBoxes" id="start_nå">
+                <div class="section section_users">
+                    <h2 class="title_sections list_items_member">TEAMMEDLEM</h2>
+                    <form class="add_entry" onsubmit="addMember(event);listMembers();this.reset()">
+    
+                        <div id="entry_username">
+                            <!-- Legg til teammedlem -->
+                            <div id="name_input"><input name="name" placeholder="Ny Teammedlem" /></div>
+                        </div>
+                        <div id="entry_submit_user">
+                            <div><input type="submit" name="submit_user" value="Legg til medlem" /></div>
+                        </div>
+                        <div id="member_list"></div>
+                    </form>
+                </div>
+                <!-- Legg til oppgave-->
+                <div class="section section_tasks">
+                    <h2 class="title_sections list_items_task">ARBEIDSOPPGAVE</h2>
+                    <form class="add_entry" onsubmit="addTask(event);listTasks();this.reset()">
+    
+                        <div id="entry_task">
+                            <div><input name="task" placeholder="Ny oppgave" /></div>
+                        </div>
+                        <div id="entry_submit_task">
+                            <div><input type="submit" name="submit_task" value="Legg til oppgave" /></div>
+                        </div>
+                        <div id="task_list"></div>
+                    </form>
+                </div>
+                <!-- Ny arbeidsoppgave -->
+                <div class="section section_overview">
+                    <h2 class="title_sections">
+                        <span class="list_items_member">OVER</span><span class="list_items_task">SIKT</span></h2>
+                    <div id="confirm"></div>
+                    <div id="overview_list"></div>
+                </div>
 
             <!--
                 Her vil nok mest sannsynlig contact form'et ligge!

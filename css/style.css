@@ -153,7 +153,6 @@ h1 {
 
 /* SECOND PAGE */
 
-
 .secondTitle{
     position: absolute;
     top: 120%;
@@ -336,7 +335,6 @@ text-align: center;
 
 /* Kom-i-gang bokser */
 
-
 h4 {
 	background-color: #eee;
 	font-size: 1.2em;
@@ -346,19 +344,13 @@ h4 {
 
 /* Divides the content to three sections */
 .containerBoxes {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	/* grid-template-rows: 1; */
-	grid-column-gap: 9em;
-	grid-auto-columns: 1fr;
-	grid-auto-flow: column;
 	margin: 26em 11em;
-    position: absolute;  
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Input boksene  */
 .section {
-    
 	margin-top: 1.5em;
 	padding: 0px 5px 15px 5px;
 	background: #cdcdcd;
@@ -366,7 +358,7 @@ h4 {
 	/* border: 1px solid rgba(202, 202, 202, 0.801); */
 	box-shadow: 1px 1px rgba(9, 30, 66, .25);
 	border-radius: 4px;
-    width: 138%;
+    width: 25%;
     height: 90%;
     opacity: 0.9;
 }
