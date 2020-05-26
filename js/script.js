@@ -67,10 +67,11 @@ function listAssignments() {
 	}
 
 	for (const i in assignmentList) {
-		const newAssignment = document.createElement("div");
+		const newAssignment = document.createElement("li");
 		newAssignment.className = "list_items list_items_assignment";
 		list.appendChild(newAssignment);
 		newAssignment.innerHTML = `<span class="list_items_member">[${assignmentList[i].member}]</span> <span style="color:#cccc22;"> ➔  </span><span class="list_items_task">[${assignmentList[i].task}]</span>`;
+        newAssignment.draggable = true;
 	}
 }
 
@@ -87,7 +88,7 @@ function listMembers() {
 	}
 
 	for (const i in memberList) {
-		const newMember = document.createElement("div");
+		const newMember = document.createElement("li");
 		newMember.className = "list_items list_items_member";
 		list.appendChild(newMember);
 		newMember.innerHTML = `${memberList[i].member}`;
@@ -112,7 +113,7 @@ function listTasks() {
 	}
 
 	for (const i in taskList) {
-		const newTask = document.createElement("div");
+		const newTask = document.createElement("li");
 		newTask.className = "list_items list_items_task";
 		list.appendChild(newTask);
 		newTask.innerHTML = `${taskList[i].task}`;
@@ -266,12 +267,12 @@ for (var i = 0; i < accordions.length; i++) {
 
 // DRAG AND DROP
 
-const fill = document.querySelector('.fill');
+const overviewList = document.querySelector('.list_items_assignment');
 const empties = document.querySelectorAll('.empty');
 
 // Fill listeners
-fill.addEventListener('dragstart', dragStart);
-fill.addEventListener('dragend', dragEnd);
+overviewList.addEventListener('dragstart', dragStart);
+overviewList.addEventListener('dragend', dragEnd);
 
 // Loop through empty boxes and add listeners
 for (const empty of empties) {
@@ -307,5 +308,5 @@ function dragLeave() {
 
 function dragDrop() {
   this.className = 'empty';
-  this.append(fill);
+  this.append(overviewList);
 }
