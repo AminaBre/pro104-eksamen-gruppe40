@@ -21,13 +21,6 @@ $(document).ready(function () {
 	});
 });
 
-<<<<<<< HEAD
-// INPUT BOKSER
-=======
-// KOM-I-GANG-BOKSER
-
-
->>>>>>> 266b59ba89548510eb86e1ddea8097a14b7cc932
 //Legg til Ansatt
 function addMember(event) {
 	event.preventDefault();
