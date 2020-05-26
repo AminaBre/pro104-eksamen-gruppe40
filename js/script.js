@@ -76,6 +76,9 @@ function listAssignments() {
 
 listAssignments();
 
+//DRAG N DROP??
+
+
 //ansatt/medlem 
 function listMembers() {
 	const memberList = JSON.parse(window.localStorage.getItem("members")) || [];
@@ -266,15 +269,14 @@ for (var i = 0; i < accordions.length; i++) {
 
 // DRAG AND DROP
 
-const fill = document.querySelector('.fill');
+const overviewList = document.querySelector('#overview_list');
 const empties = document.querySelectorAll('.empty');
+overviewList.addEventListener('dragstart', dragStart);
+overviewList.addEventListener('dragend', dragEnd);
 
-// Fill listeners
-fill.addEventListener('dragstart', dragStart);
-fill.addEventListener('dragend', dragEnd);
 
 // Loop through empty boxes and add listeners
-for (const empty of empties) {
+for (const empty of empties) {    
   empty.addEventListener('dragover', dragOver);
   empty.addEventListener('dragenter', dragEnter);
   empty.addEventListener('dragleave', dragLeave);
@@ -307,5 +309,5 @@ function dragLeave() {
 
 function dragDrop() {
   this.className = 'empty';
-  this.append(fill);
+  this.append(overviewList);
 }
