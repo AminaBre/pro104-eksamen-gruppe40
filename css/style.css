@@ -349,7 +349,7 @@ h4 {
     padding: 5px;
     display: flex;
     width: 80%;
-    transform: translateY(1000px);
+    transform: translateY(2000px);
 }
 
 /* Input boksene  */
@@ -747,4 +747,8 @@ button.accordion:hover{
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
     background: #fff;
-}s
+}
+
+#start_nå {
+    transform: translateY(1700px);
+}
